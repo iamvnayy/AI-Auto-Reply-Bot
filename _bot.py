@@ -5,36 +5,36 @@ from openai import OpenAI
 client = OpenAI(
   api_key="<Your Key Here>",
 )
-def is_last_message_from_sender(chat_log, sender_name="Rohan Das"):
-    messages = chat_log.strip().split("/2024] ")[-1]
+def is_last_message_from_sender(chat_log, sender_name="Rohan 2nd"):
+    messages = chat_log.strip().split("/2025] ")[-1]
     if sender_name in messages:
         return True 
     return False
-pyautogui.click(1639, 1412)
+pyautogui.click(1040, 1050)
 time.sleep(1)
 while True:
-    time.sleep(5)
-    pyautogui.click(1020, 410)
-    time.sleep(0.5)
-    pyautogui.hotkey('ctrl', 'a')
-    time.sleep(0.3)
-    pyautogui.hotkey('ctrl', 'c')
-    time.sleep(0.5)
-    chat_history = pyperclip.paste()
-    print(chat_history)
-    if is_last_message_from_sender(chat_history):
-        completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a person named Naruto who speaks hindi as well as english. You are from India and you are a coder. You analyze chat history and roast people in a funny way. Output should be the next chat response (text message only)"},
-            {"role": "system", "content": "Do not start like this [21:02, 12/6/2024] Rohan Das: "},
-            {"role": "user", "content": chat_history}
-        ]
-        )
-        response = completion.choices[0].message.content
-        pyperclip.copy(response)
-        pyautogui.click(1808, 1328)
-        time.sleep(1)  
-        pyautogui.hotkey('ctrl', 'v')
-        time.sleep(1)  
+ pyautogui.moveTo(699,186)
+ pyautogui.dragTo(1107,931,duration=1.0,button='left')
+ pyautogui.hotkey('ctrl','c')
+ time.sleep(2)
+ pyautogui.click(913,795)
+ chat_history = pyperclip.paste()
+ print(chat_history)
+ if is_last_message_from_sender(chat_history):
+     completion = client.chat.completions.create(
+     model="gpt-3.5-turbo",
+     messages=[
+          {"role": "system", "content": "You are a person named Vinay who speaks hindi as well as english. You are from India and you are a coder. You analyze chat history and roast people in a funny way. Output should be the next chat response (text message only)"},
+          {"role": "system", "content": "Do not start like this [21:02, 12/6/2025] Rohan 2nd: "},
+          {"role": "user", "content": chat_history}
+      ]
+   )
+    response = completion.choices[0].message.content
+    pyperclip.copy(response)
+    pyautogui.click(885, 965)
+    time.sleep(1)  
+    pyautogui.hotkey('ctrl', 'v')
+    time.sleep(1)
+    pyautogui.press('enter')
+
         pyautogui.press('enter')
