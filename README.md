@@ -4,7 +4,7 @@
 chat application without manual intervention. 
 3. Chat History Analysis 
 4. Copies chat history from the chat application and analyzes it to determine if the last 
-message was sent by a specific user (e.g., "Rohan Das"). 
+message was sent by a specific user (e.g., "Rohan 2nd"). 
 5. Humorous Response Generation 
 6. Integrates with OpenAI's GPT-3.5-turbo model to generate funny, roast-style 
 responses based on the analyzed chat history. 
@@ -14,7 +14,7 @@ chat messages.
 9. Uses pyautogui to perform mouse and keyboard operations, interacting with the 
 chat application without manual intervention. 
 10. Copies chat history from the chat application and analyzes it to determine if the last 
-message was sent by a specific user (e.g., "Rohan Das"). 
+message was sent by a specific user (e.g., "Rohan 2nd"). 
 11. Humorous Response Generation 
 12. Integrates with OpenAI's GPT-3.5-turbo model to generate funny, roast-style 
 responses based on the analyzed chat history. 
