@@ -26,7 +26,7 @@ while True:
  
   chat_history = pyperclip.paste()
   print(chat_history)
- 
+  print(is_last_message_from_sender(chat_history))
   if is_last_message_from_sender(chat_history):
      completion = client.chat.completions.create(
      model="gpt-3.5-turbo",
@@ -45,5 +45,4 @@ while True:
     time.sleep(1)
     pyautogui.press('enter')
 
-        pyautogui.press('enter')
 
